@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio HTML Básico</title>
+  </head>
+  <!-- Utilizar todas as tags explicadas nas aulas: <h1> até <h6>, <p>, <mark>, <small>, <i>, <u>, <strong>, <ol>, <ul>, <li>, <a>, <hr>, <sub>, <sup>, <blockquote>;
+Utilizar novas tags sugeridas: <font>, <del>, <p>, <abbr> (a ideia é buscar estas tags na internet, entender como ela funciona e utilizar no texto). -->
+  <body>
+    <h1>Página Web Utilizando as Tags Aprendidas</h1>
+    <p>
+      <i
+        >Entenda a simplicidade da
+        <strong>Linguagem de Marcação Hipertexto</strong>(Hypertext Markup
+        Language).</i
+      >
+    </p>
+    <hr />
+    <h2>Índice</h2>
+    <ul>
+      <li><a href="#estrutura-basica">Estrutura Básica de HTML</a></li>
+      <li><a href="#sobre-tags">Falando Sobre Tags</a>
+        <ul><li><a href="#nome-tags"> Nome das Tags</a></li>
+        </ul>
+      </li>
+      <li><a href="#atributos-tags">Atributos das Tags</a></li>
+      <li><a href="#texto-tag">Adicionando Textos</a></li>
+      <li><a href="#">Listas</a></li>
+      <li><a href="#">Links</a></li>
+      <li><a href="#">Links de referências</a></li>
+    </ul>
+    <hr>
+
+    <h2 id="estrutura-basica">&#128165; Estrutura Básica de HTML</h2>
+    <p>
+      A linguagem de marcação <dfn> HTML</dfn> é focada na estrutura e no
+      conteúdo de uma página web. Para isso, usamos as
+      <strong> marcações &lt; &gt; </strong> <i> (No inglês, “tags”)</i>.
+    </p>
+    <br /><img
+      width="400"
+      src="/assets/tag-p.png"
+      alt="Representação de parágrafo"
+    />
+
+    <h2 id="sobre-tags">&#x1F58A; Falando Sobre Tags</h2>
+    <p>
+      Cada tag tem sua finalidade e também hierarquia, no caso dos títulos e
+      subtítulos, por exemplo. Para usá-las, é preciso iniciar o documento HTML.
+      Normalmente, o "esqueleto" de um site começa assim:
+    </p>
+    <fieldset>
+      <legend>Base de código HTML</legend>
+    <pre>
+        <code>
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="pt-BR"&gt;
+          &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;title&gt;&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+        </code>
+      </pre>
+    </fieldset>
+
+    <blockquote>
+      <i>
+        “Outras tecnologias além do HTML geralmente são usadas para descrever a
+        aparência/apresentação (CSS) ou a funcionalidade/comportamento
+        (JavaScript) de uma página da web”. (MDN Web Docs)
+      </i>
+    </blockquote>
+
+    <h2 id="nome-tags">&#128278; Nome das Tags</h2>
+    <h3>&lt; !DOCTYPE html &gt;</h3>
+    <p>
+      Esta é uma <em>tag obrigatória</em> para iniciar um arquivo HTML. Por
+      convenção, essa linha de código indica que o documento está, ou será
+      escrito, em <i> HTML5</i> (Versão mais atualizada).
+    </p>
+
+    <h3>&lt;html&gt; &lt;/html&gt;</h3>
+    <p>
+      É este elemento que deve englobar todo conteúdo do site. Com exceção da
+      tag <i>“Doctype”</i> , se alguma outra estiver fora, isso significa que
+      não será lida. Por isso, chamamos esta marcação de
+      <strong>elemento raiz</strong> do HTML <em> (root element)</em>.
+      <p> O idioma de uma página web pode ser indicado dentro da tag, como em:
+        &lt; html lang="<abbr title="Português do Brasil">pt-BR</abbr>" &gt;</abbr>, ou  &lt;html
+        lang="<abbr title="Inglês">en</abbr>"&gt;.</p>
+      
+    </p>
+
+    <div>
+    <h3>&lt;head&gt; &lt;/head&gt;</h3>
+    <p>
+      Este elemento contém, em seu corpo, algumas configurações padrão e
+      adicionais que o autor pode incluir (Gera informação adicional no mecanismo de busca e não será visível na página.), como:
+    </p>
+    <fieldset>
+      <h4>&lt;meta charset="utf-8"&gt;</h4>
+      <p>
+        Utilizado para definir o conjunto de caracteres usados no arquivo, sendo
+        possível que qualquer máquina ou pessoa tenha acesso seguro aos dados
+        deste site.
+      </p>
+      <h4>&lt;title&gt; &lt;/title&gt;</h4>
+      <p>
+        Dentro desta tag deve conter o título da página web. Ele será mostrado
+        na aba do navegador.
+      </p>
+    </fieldset>
+
+    <p>
+      A marcação &lt;head&gt; também pode ter link para folhas de estilos (css),
+      formato do site e componentes externos, como bibliotecas e outras
+      dependências.
+    </p>
+  </div>
+
+    <h3>&lt;body&gt; &lt;/body&gt;</h3>
+    <p>
+      O “body”(corpo, em inglês), é o que vem depois da head. Nele, inserimos
+      outras tags que irão ajudar a organizar todo tipo de informação que
+      queremos, como mídia, textos, campos de preenchimento, botões, listas,
+      links, etc.
+    </p>
+
+    <!-- ::::::::::::::::::::: -->
+    <h2 id="atributos-tags">&#128396; Atributos das Tags</h2>
+    <p></p>
+
+    <h2 id="texto-tag">&#128240; Adicionando Textos</h2>
+    <p></p>
+
+    <h2>Listas</h2>
+    <p></p>
+
+    <h2>Links</h2>
+    <p></p>
+
+    <hr>
+
+    <h2>&#128279; Referências</h2>
+    <details>
+      <summary>Fontes Usadas</summary>
+      <ul>
+        <li><a href="#">http://dio.me</a></li>
+        <li><a href="#">http://w3c.org</a></li>
+        <li>
+          <a href="https://github.com/gustavoguanabara/html-css"
+            >Curso Em Vídeo</a></li>
+        <li><a href="https://www.devmedia.com.br/comandos-e-tags-html5/23618">Devmedia</a></li>
+      </ul>
+    </details>
+  </body>
+</html>
